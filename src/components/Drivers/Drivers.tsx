@@ -4,7 +4,6 @@ import styles from '../main.module.scss';
 import DriverMenu from "./DriverMenu";
 import Driver from "./Driver";
 import AddButton from "./AddButton";
-import Modal from "./Modal";
 let dataDrivers: Array<Props> = [
     {
         id: "1",
@@ -51,7 +50,6 @@ function Drivers() {
 
                 </div>
             </div>
-            <Modal/>
         </>
     );
 }

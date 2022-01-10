@@ -17,7 +17,6 @@
     border-radius: 4px;
     box-shadow: 0 0 5px #eeebeb;
 
-
     h2 {
       display: block;
       margin-bottom: 35px;
@@ -99,19 +98,31 @@
       .blockActionsDrivers {
         width: 10%;
       }
-
     }
   }
 
-  .backModal {
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.4);
-    top: 0;
-    left: 0;
-    position: fixed;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+  
+}
+.backModal {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 0;
+  left: 0;
+  position: fixed;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  transform: scale(0);
+  .modalWindow{
+    padding: 15px;
+    border-radius: 4px;
+    background-color: white;
+    border: 1px solid #eeebeb;
+    width: 200px;
+    height: 300px;
   }
+}
+.backModal.active {
+  transform: scale(1);
 }
